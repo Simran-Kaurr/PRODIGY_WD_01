@@ -1,0 +1,582 @@
+    /* Basic Reset */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        
+        
+    }
+   
+    
+    .navo {
+        position: fixed;
+        width: 100%;
+        background-color: rgba(108, 60, 34, 0.937);
+        padding: 20px 20px;
+        z-index: 1000;
+    }
+    
+    .nav-menu {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .nav-menu li {
+        margin: 0 15px;
+    }
+    
+    .nav-menu a {
+        text-decoration: dashed;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: bolder;
+        transition: 0.3s ease;
+        padding: 5px 10px 20px;
+        border-radius: 5px;
+    }
+    /* Hover Effect */
+    
+    .nav-menu a:hover {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 20px rgb(255, 255, 255), /* Intense white glow */
+        0 0 30px rgba(167, 62, 62, 0.059);
+    }
+    /* Active State on Scroll */
+    
+    .nav-menu.scrolled a {
+        background-color: #222;
+        color: #fff;
+    }
+    /* Content Section Styles */
+    
+    section {
+        padding: 100px 20px;
+        height: 100vh;
+        
+    }
+    
+    #home {
+        background-image: url(women_hl_autumn_mobile-1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #home h1 {
+        margin: 254px 57px 53px 390px;
+        font-size: 550%;
+    }
+    /* Button Styles */
+    
+    .cta-button {
+        margin-left: 75vh;
+        padding: 10px 20px 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: rgba(108, 60, 34, 0.937);
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .cta-button:hover {
+        background-color: #ffffff;
+        color: black;
+        transform: scale(1.05);
+        /* Slight zoom on hover */
+    }
+    /* Pop-up Box Styles */
+    
+    .popup-box {
+        display: none;
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 40px;
+        background-color: rgb(221, 221, 221);
+        border: 2px solid #08080800;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+        border-radius: 50%;
+    }
+    
+    .close-btn {
+        margin-left: 40%;
+        margin-top: 10px;
+        padding: 5px 15px;
+        font-size: 14px;
+        color: white;
+        background-color: #333;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .popup-box a{
+        font-size: larger;
+        font-style: normal;
+        color: #412e19;
+        text-decoration: none;
+        
+
+    }
+    
+    .close-btn:hover {
+        background-color: #555;
+    }
+    
+    #about {
+        background-color: #eaeaea;
+    }
+    
+    #services {
+        background-color: #dcdcdc;
+    }
+    
+    #contact {
+        background-color: #cccccc;
+    }
+
+
+
+
+
+
+       
+        @media only screen and (max-width: 768px) {
+        
+       
+         .icons{
+           display: none;
+         }
+       
+        
+         .logo{
+           width: 100px;
+           height: 80px;
+           cursor: pointer;
+           } 
+         }
+         .A {
+            margin-top: 9%;
+            scroll-behavior: smooth;
+            display: block;
+            justify-content: center;
+            align-items: center;
+           
+            
+         }
+         .ho{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+          
+            
+         }
+         .A p{
+            color: #412e19;
+            text-align: justify;
+            padding-top: 3%;
+            box-sizing: border-box;
+            border-radius: 0%;
+            padding: 20px 90px 20px 90px
+         }
+
+         
+
+
+
+
+
+         
+         
+         
+
+
+
+
+         
+       
+     
+       
+     
+
+       
+       /* Section */
+       .section {
+         padding: 60px 0 0 0;
+       }
+       
+       /* Benefits */
+       .benefit-center {
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+         gap: 70px;
+       }
+       
+       .benefit {
+         border: 2px solid #53391b;
+         padding: 16px 16px 32px 16px;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+       }
+       
+       .benefit .icon {
+         color:  #a2581e;
+         font-size: 64px;
+       }
+       
+       .benefit h4 {
+         margin-bottom: 5px;
+       }
+       
+       .benefit .text {
+         font-size: 24px;
+         color: #777;
+       }
+       
+
+       
+
+
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(108, 60, 34, 0.937);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #cccccc; /* Gold color on hover */
+}
+
+/* Services Section Styles */
+#services {
+    margin: 30px 0px 40px 0px;
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+     overflow: auto;
+    scroll-behavior: smooth;
+    
+}
+
+#services h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #6c3c22;
+}
+
+.service-cards {
+    display: -ms-grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.service-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #6c3c22;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #6c3c22;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Menu Styles */
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(108, 60, 34, 0.937);
+    padding: 20px;
+    z-index: 1000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #f2f2f2; 
+}
+
+/* Blog Section Styles */
+#blog {
+    padding: 100px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#blog h1 {
+    margin-top: 2%;
+    font-size: 46px;
+    margin-bottom: 90px;
+    color: #6c3c22
+}
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 40px;
+}
+
+.blog-card {
+    background-color: white;
+    padding: 20px 20px 20px 40px ;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+
+
+.blog-card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #6c3c22;
+}
+
+.blog-card p {
+    font-size: 20px;
+    color: #333;
+}
+
+.blog-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgba(108, 60, 34, 0.937);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.blog-card a:hover {
+    color: #000000;
+    background-color: #d5d4d4;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 236, 236, 0.597);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(108, 60, 34, 0.8); /* Border with brown color */
+  
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+    background-color: #ffffff;
+   
+}
+
+.close:hover {
+   
+    color: rgb(62, 35, 35);
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact Page Section */
+#contact {
+   
+    background-color:  rgba(108, 60, 34, 0.932);
+    padding: 50px 20px;
+}
+
+.contact-container {
+   
+    max-width: 800px;
+   margin: auto;
+   margin-top: 7%;
+    background-color: rgb(248, 247, 247);
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 5px solid rgba(79, 48, 32, 0.8); /* Border around contact form */
+}
+
+h2 {
+    font-size: xx-large;
+    text-align: center;
+    color: #6c3c22;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #6c3c22;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+input:focus, textarea:focus {
+    border-color: #6c3c22; /* Brown border on focus */
+    outline: none;
+}
+
+/* Button Styles */
+.contact-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #6c3c22;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #52504c; /* Golden color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+

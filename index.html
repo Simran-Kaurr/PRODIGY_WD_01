@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="">
+    <nav  class="navo">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li> <a href="blog.html">blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav></header>
+
+    <!-- Content Sections -->
+    <section id="home" class="home-section">
+        <h1>Welcome to Home</h1>
+        <button   class="cta-button" id="learnbtn" onclick="togglePopup()" >Learn More</button>
+
+        <!--pop up box-->
+        <div class="popup-box" id="popup-box">
+            <p>For more information about our services. You can read <a href="#about" onclick="closePopup()" >About us</a></p>
+            <button class="close-btn" onclick="togglePopup()">Close</button>
+        </div>
+         
+        </section>
+        <section id="services">
+            <h1>Our Services</h1>
+        </section>
+        <section id="blogs">
+            <h1>For more information</h1>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Us</h1>
+        </section>
+        
+        <script src="script.js"></script>
+</body>
+
+</html>
